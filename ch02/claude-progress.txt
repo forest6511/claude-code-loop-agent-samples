@@ -1,0 +1,5 @@
+# loglens 進捗ログ（新しいセッションはまずこれを読む）
+
+2026-07-18 v0.1: count コマンド完成（ERROR/WARN/INFO/OTHER 集計）
+2026-07-18 pytest 導入: test_loglens.py（4テスト）で count の動作を固定
+2026-07-18 --level 追加: 指定レベルのみ表示（テスト10件 全パス）
