@@ -1,0 +1,8 @@
+# loglens 進捗ログ（新しいセッションはまずこれを読む）
+
+2026-07-18 v0.1: count コマンド完成（ERROR/WARN/INFO/OTHER 集計）
+2026-07-18 pytest 導入: test_loglens.py（4テスト）で count の動作を固定
+2026-07-18 --level 追加: 指定レベルのみ表示（テスト10件 全パス）
+2026-07-18 --since/--until 追加: 時刻範囲で絞り込み・OTHER は範囲指定時除外（テスト16件 全パス）
+2026-07-19 jsonl-input 完了: .jsonl を JSON Lines として解釈・不正行は OTHER・sample.jsonl 追加（テスト24件 全パス）
+2026-07-19 multi-file 完了: count が複数ファイルを受け取り合算集計・.log と .jsonl 混在可（テスト31件 全パス）
