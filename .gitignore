@@ -5,3 +5,6 @@ __pycache__/
 output/
 *.log
 .env
+
+# 章の教材ログ（書籍本文とセットのサンプルデータ）は ignore しない
+!ch*/sample.log
