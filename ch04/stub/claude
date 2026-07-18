@@ -1,0 +1,4 @@
+#!/bin/bash
+# ralph.sh ドライラン用スタブ。固定コストの JSON を返すだけの偽 claude
+[ -n "${STUB_COMMIT:-}" ] && git commit --allow-empty -qm "stub progress"
+echo "{\"total_cost_usd\": ${STUB_COST:-0.90}, \"num_turns\": 0}"
