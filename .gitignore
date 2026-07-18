@@ -8,3 +8,8 @@ output/
 
 # 章の教材ログ（書籍本文とセットのサンプルデータ）は ignore しない
 !ch*/sample.log
+
+# Stop hook 等の設定は教材本体なので ignore しない（グローバル gitignore 対策）
+!ch*/.claude/
+!ch*/.claude/**
+!ch*/CLAUDE.md
