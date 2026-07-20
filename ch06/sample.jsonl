@@ -1,0 +1,12 @@
+{"timestamp": "2026-07-18 09:12:01", "level": "INFO", "message": "Server started on port 8080"}
+{"timestamp": "2026-07-18 09:12:03", "level": "WARN", "message": "Disk usage at 85%"}
+{"timestamp": "2026-07-18 09:12:05", "level": "ERROR", "message": "Connection refused"}
+{"timestamp": "2026-07-18 09:12:07", "level": "DEBUG", "message": "unknown level line"}
+{"timestamp": "2026-07-18 09:12:09", "message": "level key is missing"}
+this line is not valid json
+{"timestamp": "2026-07-18 09:12:11", "level": "ERROR", "message": "Timeout waiting for response"}
+{"timestamp": "2026-07-18 09:12:13", "level": "INFO", "message": "Retry succeeded"}
+
+{"timestamp": "2026-07-18 09:12:15", "level": "INFO", "message": "Health check OK"}
+{"timestamp": "2026-07-18 09:12:17", "level": "WARN", "message": "Slow query detected"}
+{"timestamp": "2026-07-18 09:12:19", "level": "ERROR", "message": "Disk full"}

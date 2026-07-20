@@ -1,0 +1,20 @@
+2026-07-18 09:12:03 INFO Server started on port 8080
+2026-07-18 09:12:41 INFO User login succeeded user_id=1023
+2026-07-18 09:13:02 INFO GET /api/items 200 12ms
+2026-07-18 09:13:05 WARN Slow query detected duration_ms=1840
+2026-07-18 09:13:20 INFO GET /api/items 200 9ms
+2026-07-18 09:14:11 ERROR DB connection failed retrying attempt=1
+Traceback (most recent call last):
+  File "app/db.py", line 42, in connect
+2026-07-18 09:14:13 INFO Reconnected to DB
+2026-07-18 09:15:00 INFO GET /api/orders 200 31ms
+2026-07-18 09:15:22 WARN Retry queue length=12
+2026-07-18 09:16:45 INFO User logout user_id=1023
+2026-07-18 09:17:03 ERROR Payment API timeout order_id=577
+2026-07-18 09:17:04 WARN Payment retry scheduled order_id=577
+2026-07-18 09:18:30 INFO GET /health 200 1ms
+2026-07-18 09:19:12 INFO GET /api/items 200 8ms
+2026-07-18 09:20:05 ERROR Unhandled exception in worker
+2026-07-18 09:20:06 INFO Worker restarted
+2026-07-18 09:21:33 WARN Disk usage 81 percent
+2026-07-18 09:22:00 INFO GET /api/items 200 11ms
