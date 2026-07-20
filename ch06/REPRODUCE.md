@@ -9,7 +9,7 @@
 - `test_loglens.py` — pytest 53件（ch05 の39件 + format-json 8件 +
   format-csv 6件）
 - `.claude/skills/verify-loglens/SKILL.md` — 検証スキル（テスト+lint+
-  カバレッジの3点ゲート。619字・24行）
+  カバレッジの3点ゲート。619字・23行）
 - `.claude/agents/checker.md` — ch05 の checker に `skills:
   [verify-loglens]` を追加（起動時にスキル全文をプリロード）
 - `specs/format-json.md` / `specs/format-csv.md` — 2機能の仕様
