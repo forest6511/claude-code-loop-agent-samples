@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls *)",
+      "Bash(python3 loglens.py *)",
+      "Bash(mv ops/*)",
+      "Bash(echo *)",
+      "Write(ops/**)",
+      "Edit(ops/**)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PROJECT_DIR}/.claude/hooks/verify.sh",
+            "args": [],
+            "timeout": 120
+          },
+          {
+            "type": "prompt",
+            "prompt": "開発セッションの終了判定を行います。次の JSON の\nlast_assistant_message を読んでください: $ARGUMENTS\n\n判定基準: loglens.py の変更（機能追加・オプション追加・挙動変更）を\n報告しているのに、README.md の更新に言及していない場合だけ\n{\"ok\": false, \"reason\": \"loglens.py の変更が README.md の使い方に\n反映されているか確認し、必要なら更新してから終了してください\"} を\n返します。それ以外はすべて {\"ok\": true} を返します。\n"
+          }
+        ]
+      }
+    ]
+  }
+}
