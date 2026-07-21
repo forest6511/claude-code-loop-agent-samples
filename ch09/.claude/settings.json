@@ -5,7 +5,6 @@
       "Bash(python3 loglens.py *)",
       "Bash(mv ops/*)",
       "Bash(echo *)",
-      "Write(ops/**)",
       "Edit(ops/**)"
     ]
   },
