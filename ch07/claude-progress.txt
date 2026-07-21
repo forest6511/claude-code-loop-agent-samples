@@ -1,0 +1,14 @@
+# loglens 進捗ログ（新しいセッションはまずこれを読む）
+
+2026-07-18 v0.1: count コマンド完成（ERROR/WARN/INFO/OTHER 集計）
+2026-07-18 pytest 導入: test_loglens.py（4テスト）で count の動作を固定
+2026-07-18 --level 追加: 指定レベルのみ表示（テスト10件 全パス）
+2026-07-18 --since/--until 追加: 時刻範囲で絞り込み・OTHER は範囲指定時除外（テスト16件 全パス）
+2026-07-19 jsonl-input 完了: .jsonl を JSON Lines として解釈・不正行は OTHER・sample.jsonl 追加（テスト24件 全パス）
+2026-07-19 multi-file 完了: count が複数ファイルを受け取り合算集計・.log と .jsonl 混在可（テスト31件 全パス）
+2026-07-19 top-messages 完了: --top N で頻出メッセージ上位を表示・同数は初出順・OTHER 除外・各オプションと併用可（テスト39件 全パス）
+2026-07-19 全5機能 passes:true 到達: --top 実装は checker サブエージェントのレビューを通過（テスト39件 全パス）
+2026-07-21 format-json 完了: count に --format text/json を追加・--top/--level/--since/--until/.jsonl/複数ファイル併用可・verify-loglens 3点合格（テスト47件 全パス・カバレッジ98%）
+2026-07-21 format-csv 完了: --format に csv を追加・level,count 集計と --top 時は空行+count,message をCSV引用ルールで出力・verify-loglens 3点合格（テスト53件 全パス・カバレッジ98%）
+2026-07-21 regex 完了: count に --regex を追加・メッセージを re.search で絞り込み(大文字小文字区別・OTHER 行は除外)・不正パターンは exit 2・全オプションと併用可・verify-loglens 3点合格（テスト65件 全パス・カバレッジ98%）
+2026-07-21 安定性検証: verify-loglens 3点合格（テスト65件・lint合格・カバレッジ98%）・異常系(欠損/空/不正regex/10万行)確認・README に終了コード追記
