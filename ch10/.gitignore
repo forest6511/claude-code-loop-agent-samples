@@ -1,0 +1,6 @@
+.coverage
+__pycache__/
+logs/
+logs-console.txt
+.claude/worktrees/
+ops/
