@@ -47,10 +47,14 @@ python3 loglens.py count sample.log --regex "(" ; echo "exit=$?"   # exit 2
 - Run 3 別試行: 同じ条件で 10ターン・$2.06。「ローカルで確認できる範囲では
   満たしている」という再解釈を evaluator が初回判定で受理（判定は
   確率的で、曖昧な条件は挙動まで曖昧になる実例）
-- 対話セッション: `claude --allowedTools "Read,Write,Edit,Bash"` で
-  .gitignore 整理のゴールを設定 → `◎ /goal active` 表示 →
-  `✔ Goal achieved (33s · 1 turn · 1.8k tokens)`（コミット fc41f7e）。
-  `/goal`（引数なし）で達成状態の表示、`/goal clear` → `No goal set`
+- 対話セッション（本文掲載分）: `claude --permission-mode default
+  --allowedTools "Read,Bash"` で「pytest 全件成功の出力と --regex の
+  実行結果が会話に出力されていること」の検証型ゴールを設定 →
+  `◎ /goal active (7s)` → `✔ Goal achieved (17s · 1 turn · 714 tokens)` →
+  `/goal`（引数なし）で達成状態の表示 → `/goal clear` → `No goal set`
+- 対話セッション（本文非掲載）: .gitignore 整理のゴール
+  （`✔ Goal achieved (33s · 1 turn · 1.8k tokens)`、コミット fc41f7e）。
+  Run 3 の `.gitignore` 整理コミット（42afc5a）はこれへの追記
 
 ## 数字の読み方
 
