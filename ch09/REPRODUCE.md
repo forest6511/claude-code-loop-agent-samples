@@ -9,8 +9,9 @@
 - `loggen.sh` — 疑似ログ生成（COUNT 個を INTERVAL 秒おきに
   `ops/incoming/` へ置く。ログ着信の再現用・新規）
 - `.claude/loop.md` — 引数なし `/loop` 用の無人運転指示書（新規）
-- `.claude/settings.json` — 無人発火用の `permissions.allow` 6件を追加
-  （Stop hook 2本は ch03 のまま）
+- `.claude/settings.json` — 無人発火用の `permissions.allow` 5件を追加
+  （Stop hook 2本は ch03 のまま。ファイル権限のパス指定は Edit ルール
+  のみが判定対象で、`Write(パス)` ルールは効かず起動時警告が出る）
 - `.gitignore` — `ops/`（実行時データ）を追加
 
 ## 再現手順
