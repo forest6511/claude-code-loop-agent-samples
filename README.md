@@ -1,6 +1,6 @@
-# Claude Codeで実践するAI駆動開発とLoop Agent — サンプルコード
+# Claude Codeで実践するLoop Agent — サンプルコード
 
-書籍「Claude Codeで実践するAI駆動開発とLoop Agent: 手動プロンプトをやめて、開発を自律ループで回す12段階」（森川陽介）のサンプルリポジトリです。
+書籍「Claude Codeで実践するLoop Agent: 手動プロンプトをやめて、AI駆動開発を自律ループで回す12段階」（森川陽介）のサンプルリポジトリです。
 
 本書では、ログ集計CLI「loglens」を12章かけて手動開発から完全自律開発へ育てていきます。各章のディレクトリに、その章時点の loglens のコード・ループ設定（hooks / skills / agents / スクリプト）・実行ログを収録しています。
 
