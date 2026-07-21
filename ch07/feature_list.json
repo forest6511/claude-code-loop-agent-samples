@@ -1,0 +1,50 @@
+[
+  {
+    "id": "level-filter",
+    "description": "count に --level を追加し、指定レベルの件数だけを表示する",
+    "verify": "python3 -m pytest",
+    "passes": true
+  },
+  {
+    "id": "time-range",
+    "description": "count に --since / --until を追加し、時刻範囲で絞り込む",
+    "verify": "python3 -m pytest",
+    "passes": true
+  },
+  {
+    "id": "jsonl-input",
+    "description": "JSON Lines 形式のログ入力に対応する",
+    "verify": "python3 -m pytest",
+    "passes": true
+  },
+  {
+    "id": "multi-file",
+    "description": "count が複数ファイルを受け取り、合算して集計する",
+    "verify": "python3 -m pytest",
+    "passes": true
+  },
+  {
+    "id": "top-messages",
+    "description": "--top N で頻出メッセージの上位 N 件を表示する",
+    "verify": "python3 -m pytest",
+    "passes": true
+  },
+  {
+    "id": "format-json",
+    "description": "count に --format json を追加し、集計結果を JSON で出力する",
+    "verify": "/verify-loglens",
+    "passes": true
+  },
+  {
+    "id": "format-csv",
+    "description": "count に --format csv を追加し、集計結果を CSV で出力する",
+    "verify": "/verify-loglens",
+    "passes": true
+  },
+  {
+    "id": "regex",
+    "description": "count に --regex を追加し、メッセージを正規表現で絞り込む",
+    "verify": "/verify-loglens",
+    "passes": true
+  }
+]
