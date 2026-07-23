@@ -1,4 +1,4 @@
-# ch02 — 検証を渡す（pytest・CLAUDE.md・feature list 導入）
+# ch02 — 検証手段を与える（pytest・CLAUDE.md・feature list 導入）
 
 第2章終了時点の `loglens` の到達状態です。
 

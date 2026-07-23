@@ -7,7 +7,7 @@ jobs:
   verify-loop:
     runs-on: ubuntu-latest
     # SDK にセッション全体のタイムアウトはないため、
-    # ジョブ側の壁時計上限が最後の安全網になる
+    # ジョブ側の壁時計時間の上限が最後の安全網になる
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
