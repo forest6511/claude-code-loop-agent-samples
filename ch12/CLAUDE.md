@@ -27,4 +27,4 @@
   `claude --settings .claude/settings.maintenance.json` で起動する。
   テスト編集を機械的に拒否する PreToolUse deny が有効になる
 - 人間が承認した仕様（SPEC.md）に基づく機能追加セッションは通常起動。
-  既存テスト無変更の検問は /goal 条件と checker レビューで行う
+  既存テスト無変更のチェックは /goal 条件と checker レビューで行う

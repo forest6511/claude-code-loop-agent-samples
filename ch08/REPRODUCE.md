@@ -37,7 +37,7 @@ python3 loglens.py count sample.log --stats --output /tmp/merged.txt
   `claude -p --worktree output-dev` を `&` + `wait` で同時起動
   → stats 33ターン/227.1秒/$5.55（テスト78件）・output 28ターン/161.4秒/
   $4.79（テスト72件）。**壁時計 232秒**（直列なら合計 388.5秒ぶん）。
-  各ブランチにコミット2個（実装 + README 検問による README 追記）
+  各ブランチにコミット2個（実装 + README チェックによる README 追記）
 - マージ: `git merge worktree-stats-dev` = Fast-forward。
   `git merge worktree-output-dev` = 4ファイル CONFLICT（loglens.py /
   test_loglens.py / README.md / claude-progress.txt。feature_list.json は

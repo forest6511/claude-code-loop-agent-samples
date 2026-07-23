@@ -11,7 +11,7 @@
   （tools: Read, Grep, Glob / maxTurns: 15）
 - `specs/top-messages.md` — --top N の仕様（毎回 checker の照合基準）
 - `.claude/settings.json` — 常設ゲートは ch03 の2本のまま
-  （command 型 verify.sh + prompt 型 README 検問）。agent 型は実測の
+  （command 型 verify.sh + prompt 型 README チェック）。agent 型は実測の
   結果、常設から外した（fail-open と毎ターン発火コストのため）
 - `.claude/hooks/agent-gate-prompt.txt` — agent 型 Stop hook を試す
   場合の検証プロンプト（本文の絞り込み修正済み版）
