@@ -41,7 +41,7 @@ python3 loglens.py count sample.log --format csv
   27ターン / 155.6秒 / $4.24。テスト39→47件。transcript に Skill ツール
   呼び出し {"skill": "verify-loglens", "args": "format-json"} が記録され、
   3点検証（47 passed / All checks passed! / カバレッジ98.04%）を1コマンド
-  で実行。実装コミット後、ch03 の prompt 型 README 検問が発火して README
+  で実行。実装コミット後、ch03 の prompt 型 README チェックが発火して README
   追記まで実施
 - Run 2（format-csv 実装・スキル使い回し）: 検証の指示は
   「検証は /verify-loglens format-csv で」の1句のみ。
@@ -72,5 +72,5 @@ format-json を呼んで3点すべて合格させてください。" \
 - `disable-model-invocation: true` を SKILL.md に付けると、maker の
   自動呼び出し・checker へのプリロード・スケジュール発火（v2.1.196+）の
   3経路が同時に閉じる（本文の落とし穴参照）
-- スキルは指示でありゲートではない。常設の検問は `.claude/settings.json`
+- スキルは指示でありゲートではない。常設のチェックは `.claude/settings.json`
   の Stop hook（verify.sh）に置いたまま運用する

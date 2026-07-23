@@ -73,7 +73,7 @@ def build_options(fix: bool, max_turns: int,
             max_turns=max_turns,
             max_budget_usd=max_budget,
         )
-    # CI 検問モード: 読み取りとゲート実行だけ。
+    # CI チェックモード: 読み取りとゲート実行だけ。
     # setting_sources=[] が遮断の要。None(未指定)は「読み込まない」
     # ではなく「CLI と同じ既定 = user/project/local を全部読む」
     return ClaudeAgentOptions(
@@ -90,7 +90,7 @@ def build_options(fix: bool, max_turns: int,
 def main() -> int:
     ap = argparse.ArgumentParser(description="loglens verification loop")
     ap.add_argument("--fix", action="store_true",
-                    help="失敗を修正するローカルモード(既定は検問のみ)")
+                    help="失敗を修正するローカルモード(既定はチェックのみ)")
     ap.add_argument("--max-turns", type=int, default=15)
     ap.add_argument("--max-budget", type=float, default=4.0)
     args = ap.parse_args()

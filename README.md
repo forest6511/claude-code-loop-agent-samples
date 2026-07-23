@@ -7,7 +7,7 @@
 ## 構成
 
 - `ch01/` なぜLoop Agentか（loglens v0.1 手動開発）
-- `ch02/` 検証を渡す（pytest・CLAUDE.md・進捗ファイル）
+- `ch02/` 検証手段を与える（pytest・CLAUDE.md・進捗ファイル）
 - `ch03/` Stop hook（verify.sh・settings.json）
 - `ch04/` Ralph loop（ralph.sh・PROMPT.md・停止条件）
 - `ch05/` Maker-Checker（checker エージェント定義）

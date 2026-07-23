@@ -30,7 +30,7 @@ python3 loglens.py count sample.log --regex "(" ; echo "exit=$?"   # exit 2
 - Run 1（悪い条件・破棄）: `claude -p "/goal count に --regex オプションが
   追加されて動くこと"` `--allowedTools "Read,Write,Edit,Bash,Skill"`
   → 33ターン・272.0秒・$6.83。完走したが evaluator の差し戻し 0 回
-  （ブロックは ch03 常設の README 検問1回のみ）。品質を支えたのは条件では
+  （ブロックは ch03 常設の README チェック1回のみ）。品質を支えたのは条件では
   なく CLAUDE.md の掟・常設フック・スキル。`git reset --hard` で破棄
 - Run 2（良い条件・採用）: 条件 = specs/regex.md 準拠 + (1) /verify-loglens
   3点の実行結果の要約行が会話に出力され合格 (2) 既存テスト無変更
