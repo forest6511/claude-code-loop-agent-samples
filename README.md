@@ -4,6 +4,8 @@
 
 本書では、ログ集計CLI「loglens」を12章かけて手動開発から完全自律開発へ育てていきます。各章のディレクトリに、その章時点の loglens のコード・ループ設定（hooks / skills / agents / スクリプト）・実行ログを収録しています。
 
+Kindle 版: [Claude Codeで実践するLoop Agent](https://www.amazon.co.jp/dp/B0HBC3HS48)
+
 ## 構成
 
 - `ch01/` なぜLoop Agentか（loglens v0.1 手動開発）
